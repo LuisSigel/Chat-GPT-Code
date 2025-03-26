@@ -16,4 +16,4 @@ completion = client.chat.completions.create(
     ]
 )
 
-print(completion.choices[0].message.content) #choices[] which answer to take (by default you only get one); message.content means only the content is the output.
+print(completion.choices[0].message.content) #choices[] defines which answer to take (by default you only get one); message.content means only the content is the output.
