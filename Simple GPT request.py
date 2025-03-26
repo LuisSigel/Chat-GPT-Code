@@ -4,7 +4,6 @@ import os
 
 load_dotenv()  # loads .env into environment
 api_key = os.getenv("open_api_key")
-# Replace with your real API key
 client = OpenAI(api_key=api_key) # Initialize the OpenAI client with the API key
 
 completion = client.chat.completions.create(
