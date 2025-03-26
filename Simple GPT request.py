@@ -1,3 +1,4 @@
+#This is very basic. Chat wont be able to remember old conversations. No follow up questions possible. 
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
