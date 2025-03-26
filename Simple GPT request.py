@@ -11,8 +11,8 @@ completion = client.chat.completions.create(
     messages=[
         {"role": "developer", "content": "You are a helpful assistant."}, #GPT role
         {"role": "user", "content": "Write a one-sentence bedtime story about a unicorn."} #user role
-        #addfunctions = Here, add additional functions apart from model and messages. E.g. Temperature, presence penalty, repsonse format, store(only then requests are stored)..See documentation
     ]
+    #addfunctions = Here, add additional functions apart from model and messages. E.g. Temperature, presence penalty, repsonse format, store(only then requests are stored)..See documentation
 )
 
 print(completion.choices[0].message.content) #choices[] defines which answer to take (by default you only get one); message.content means only the content is the output.
