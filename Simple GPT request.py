@@ -10,7 +10,7 @@ client = OpenAI(api_key=api_key) # Initialize the OpenAI client with the API key
 completion = client.chat.completions.create(
     model="gpt-4o",
     messages=[
-        {"role": "developer", "content": "You are a helpful assistant."}, #GPT role
+        {"role": "developer", "system": "You are a helpful assistant."}, #GPT role
         {"role": "user", "content": "Write a one-sentence bedtime story about a unicorn."} #user role
     ]
     #addfunctions = Here, add additional functions apart from model and messages. E.g. Temperature, presence penalty, repsonse format, store(only then requests are stored)..See documentation
